@@ -1,0 +1,12 @@
+<h1>Users</h1>
+
+<ul>
+  <% @users.each do |user| %>
+  <li>
+    <%= <%= link_to user.full_name, user %>%>
+  </li>
+  <% end %>
+</ul>
+
+<!-- this uses the method used in the user model for full name, -->
+<!--then the 'user' goes to that particular user show page -->
